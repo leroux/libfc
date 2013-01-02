@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "transforms.h"
-#include "listops.h"
+#include "fc.h"
 
 int square(int a) {
   return a * a;
@@ -22,7 +21,7 @@ int add(int a, int b) {
   return a + b;
 }
 
-int mult(int a, int b) {
+int mul(int a, int b) {
   return a * b;
 }
 
@@ -30,11 +29,11 @@ int main(int argc, char *argv[]) {
   int l[] = {10,1,2,3,4,5,6,7,8,9};
   int *m;
 
-  printf("%d\n", foldl(mult, 1, l));
+  printf("%d\n", foldl(mul, 1, l));
   m = map(cube, l);
-  print_list(m);
+  list_print(m);
   m = filter(even, m);
-  print_list(m);
+  list_print(m);
 
   return 0;
 }
