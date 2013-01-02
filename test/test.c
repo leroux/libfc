@@ -13,10 +13,6 @@ bool less_than_50(int a) {
   return a < 50;
 }
 
-bool even(int a) {
-  return a % 2 == 0;
-}
-
 int main(int argc, char *argv[]) {
   int l[] = {10,1,2,3,4,5,6,7,8,9};
   int *m;

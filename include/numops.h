@@ -1,5 +1,5 @@
-#ifndef _OPS_H
-#define _OPS_H
+#ifndef _NUMOPS_H
+#define _NUMOPS_H
 
 int add(int a, int b);
 int sub(int a, int b);

@@ -10,7 +10,7 @@ void list_print(int *xs) {
 
   printf("%d]\n", xs[size(xs) - 1]);
 
-  return;
+  return 1;
 }
 
 int sum(int *xs) {

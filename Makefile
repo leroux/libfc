@@ -1,9 +1,8 @@
 export CC := gcc
 export CFLAGS := -I$(shell pwd)/include -Wall -Wextra -Werror -Wno-unused-parameter -std=c99 -pedantic
-export CFILES := src/transforms.c src/listops.c src/ops.c
+export CFILES := src/filterops.c src/listops.c src/numops.c src/transforms.c
 export OFILES := $(CFILES:.c=.o)
 export TESTS := test/test.c
-export EXAMPLES := examples/ex1.c
 
 all: test
 
