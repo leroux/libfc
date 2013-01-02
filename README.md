@@ -6,8 +6,8 @@ An experimental library to make functional programming in C simple.
 // Applies an unary function f to each element of a list xs.
 int *map(ufunc f, int *xs)
 
-// Filters a list xs by predicate p.
-// A predicate is a unary function that returns a boolean value.
+// Filters a list xs by a predicate p.
+// Note: A predicate is a unary function that returns a boolean value.
 int *filter(pred p, int *xs);
 
 // Folds/Reduces list xs by a binary function *f* applied to
