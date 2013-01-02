@@ -6,6 +6,8 @@
 #include <stdbool.h>
 #include <string.h>
 
+#include "listops.h"
+
 typedef int (*ufunc)(int a);
 typedef int (*bfunc)(int a, int b);
 typedef bool (*pred)(int a);
