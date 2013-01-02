@@ -1,19 +1,26 @@
 export CC := gcc
-export CFLAGS := -I$(shell pwd)/include -Wall -Wextra -Werror -Wno-unused-parameter -std=c99 -pedantic
-export CFILES := src/filterops.c src/listops.c src/numops.c src/transforms.c
-export OFILES := $(CFILES:.c=.o)
-export TESTS := test/test.c
+export CFLAGS := -I$(shell pwd)/include -L$(shell pwd)/src -Wall -Wextra -Werror -Wno-unused-parameter \
+	-std=c99 -pedantic -O0
 
-all: test
+bindir = /usr/bin
+libdir = /usr/lib
+includedir = /usr/include
 
-.c.o:
-	$(CC) $(CFLAGS) $< -c -o $@
+.PHONY: clean all install ex
 
-test: $(OFILES)
-	$(CC) $(CFLAGS) $(OFILES) $(TESTS) -o test/$@
-	test/test
+all: src/libfc.a ex
+
+src/libfc.a:
+	cd src; $(MAKE)
+
+install: src/libfc.a
+	install -C -m 644 src/libfc.a $(libdir)/libfc.a
+	mkdir -p $(includedir)/fc
+	install -C -m 644 include/fc/fc.h $(includedir)/fc/fc.h
+
+ex: src/libfc.a
+	cd ex; $(MAKE)
 
 clean:
-	rm -f $(OFILES) test/test
-
-.PHONY: clean test
+	cd src; $(MAKE) clean
+	cd ex; $(MAKE) clean
