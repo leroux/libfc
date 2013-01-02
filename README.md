@@ -15,5 +15,5 @@ int *filter(pred p, int *xs);
 int foldl(bfunc f, int accumulator, int *xs);
 
 // Simply prints out a list xs in a readable fashion.
-int print_list(int *xs);
+int list_print(int *xs);
 ```

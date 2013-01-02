@@ -2,7 +2,7 @@
 #include "listops.h"
 #include "transforms.h"
 
-int print_list(int *xs) {
+int list_print(int *xs) {
   printf("[");
 
   int i = 0;
