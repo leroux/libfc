@@ -16,22 +16,22 @@ typedef int (*ufunc)(int a);
 typedef int (*bfunc)(int a, int b);
 typedef bool (*pred)(int a);
 
-/* Transformations API. */
+/* Transformations */
 int *map(ufunc f, int *xs);
 int *filter(pred p, int *xs);
 int foldl(bfunc f, int accumulator, int *xs);
 
-/* List Operations API. */
+/* List Operations */
 void list_print(int *xs);
 int sum(int *xs);
 int product(int *xs);
 
-/* Numerical Operations API */
+/* Numerical Operations*/
 int add(int a, int b);
 int sub(int a, int b);
 int mul(int a, int b);
 
-/* Filter Operations API. */
+/* Filter Operations */
 bool even(int a);
 bool odd(int a);
 
