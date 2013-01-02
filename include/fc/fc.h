@@ -12,8 +12,11 @@
 //  [5, 1,2,3,4].
 #define size(xs) (xs[0])
 
+// Unary function.
 typedef int (*ufunc)(int a);
+// Binary function.
 typedef int (*bfunc)(int a, int b);
+// Predicate. Unary function that returns a boolean. 
 typedef bool (*pred)(int a);
 
 /* Transformations */
