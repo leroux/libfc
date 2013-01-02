@@ -3,5 +3,6 @@
 
 #include "transforms.h"
 #include "listops.h"
+#include "ops.h"
 
 #endif

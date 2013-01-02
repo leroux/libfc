@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "listops.h"
-#include "transforms.h"
 
 int list_print(int *xs) {
   printf("[");
@@ -13,4 +11,12 @@ int list_print(int *xs) {
   printf("%d]\n", xs[size(xs) - 1]);
 
   return 1;
+}
+
+int sum(int *xs) {
+  return foldl(add, 0, xs);  
+}
+
+int product(int *xs) {
+  return foldl(mul, 1, xs);  
 }
