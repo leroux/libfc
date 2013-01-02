@@ -6,8 +6,6 @@
 #include <stdbool.h>
 #include <string.h>
 
-#define size(xs) (xs[0])
-
 typedef int (*ufunc)(int a);
 typedef int (*bfunc)(int a, int b);
 typedef bool (*pred)(int a);
