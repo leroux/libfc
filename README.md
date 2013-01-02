@@ -4,7 +4,14 @@ An experimental library to make functional programming in C simple.
 Note that at this time only integers are supported. There is need for generic functions, though.
 So feel free to contribute.
 
-`fc.h` is an amalgamation of all other headers.
+List Format
+-----------
+A list is stored in an array `xs` with its elemental length (+1, for keeping the length) at index 0, `xs[0]`.
+The list's data is kept in the array `xs` ranging from `xs[1]` and so on.
+For example, the list `[50, 23, 41, 21]` would be kept in the following fashion -
+  `[5, 50, 23, 41, 21]`.
+Taking into account that index 0 is reserved for the array's total length, the list's elemental length is `(5 - 1)`
+or simply `4`.
 
 Function Type Definitions
 -------------------------
