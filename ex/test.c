@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "fc.h"
+#include "fc/fc.h"
 
 int square(int a) {
   return a * a;
