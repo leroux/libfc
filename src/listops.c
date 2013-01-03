@@ -13,6 +13,19 @@ void list_print(int *xs) {
   return;
 }
 
+int head(int *xs) {
+  return xs[1];
+}
+
+int *tail(int *xs) {
+  int *tail = malloc((size(xs) - 1) * sizeof(int));
+  
+  tail[0] = size(xs) - 1;
+  memcpy(&tail[1], &xs[2], size(tail) * sizeof(int));
+
+  return tail;
+}
+
 int sum(int *xs) {
   return foldl(add, 0, xs);  
 }

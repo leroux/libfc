@@ -24,8 +24,8 @@ int main(int argc, char *argv[]) {
   list_print(m);
   m = filter(even, m);
   list_print(m);
-
   printf("%d\n", sum(m));
+  list_print(tail(tail(m)));
   
   printf("--------------\n");
 
