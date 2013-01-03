@@ -26,6 +26,8 @@ int foldl(bfunc f, int accumulator, int *xs);
 
 /* List Operations */
 void list_print(int *xs);
+int head(int *xs);
+int *tail(int *xs);
 int sum(int *xs);
 int product(int *xs);
 

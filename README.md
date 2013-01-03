@@ -46,6 +46,12 @@ List Operations
 // Prints out a list xs in a readable format, i.e. `[1, 4, 3]`.
 void list_print(int *xs);
 
+// Returns the first element of a list. Very trivial.
+int head(int *xs);
+
+// Returns the tail (the list w/o the head).
+int *tail(int *xs);
+
 // Sum of a list xs.
 int sum(int *xs);
 
