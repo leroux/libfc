@@ -23,6 +23,7 @@ typedef bool (*pred)(int a);
 int *map(ufunc f, int *xs);
 int *filter(pred p, int *xs);
 int foldl(bfunc f, int accumulator, int *xs);
+int foldr(bfunc f, int *xs, int accumulator);
 
 /* List Operations */
 void list_print(int *xs);
