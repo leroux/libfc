@@ -1,8 +1,7 @@
 EXAMPLES = test.c
 BINARIES = $(EXAMPLES:%.c=%)
 
-CFLAGS  += -I../include
-LDFLAGS += -L../src -lfc
+LDFLAGS += -lfc
 
 .PHONY : all clean
 
