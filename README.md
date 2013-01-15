@@ -4,6 +4,11 @@ An experimental library to make functional programming in C simple.
 Note that at this time only integers are supported. There is need for generic functions, though.
 So feel free to contribute.
 
+Building the Library
+--------------------
+Easy as `make`. If you want to install the static library, just `make install`.
+To run the tests: `make test`.
+
 List Format
 -----------
 A list is stored in an array `xs` with its elemental length (+1, for keeping the length) at index 0, `xs[0]`.
