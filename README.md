@@ -1,4 +1,4 @@
-Functional C [![Build Status](https://travis-ci.org/leroux/fc.png?branch=master)](https://travis-ci.org/leroux/fc)
+Functional C [![Build Status](https://travis-ci.org/leroux/libfc.png?branch=master)](https://travis-ci.org/leroux/libfc)
 ============
 An experimental library to make functional programming in C simple.
 Note that at this time only integers are supported. There is need for generic functions, though.
