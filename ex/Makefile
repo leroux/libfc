@@ -2,7 +2,7 @@ EXAMPLES = test.c
 BINARIES = $(EXAMPLES:%.c=%)
 
 CFLAGS  += -I../include
-LDFLAGS += -L../ -lfc
+LDFLAGS += -L../src -lfc
 
 .PHONY : all clean
 
