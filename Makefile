@@ -1,4 +1,4 @@
-export CC := gcc
+export CC ?= gcc
 export CFLAGS := -I$(shell pwd)/include -L$(shell pwd)/src -Wall -Wextra -Werror -Wno-unused-parameter \
 	-std=c99 -pedantic -O0
 
