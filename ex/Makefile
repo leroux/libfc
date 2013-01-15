@@ -8,7 +8,7 @@ LDFLAGS += -lfc
 all: $(BINARIES)
 
 %: %.c
-	$(CC) $(CFLAGS) $(LDFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $< $(LDFLAGS) -o $@
 	./$@
 
 clean:
