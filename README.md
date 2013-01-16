@@ -12,6 +12,11 @@ OS X Installation
 -----------------
 `$ brew install https://raw.github.com/leroux/homebrew/master/Library/Formula/libfc.rb`
 
+- - -
+
+libfc API
+=========
+
 List Format
 -----------
 A list is stored in an array `xs` with its elemental length (+1, for keeping the length) at index 0, `xs[0]`.
