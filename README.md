@@ -4,13 +4,13 @@ An experimental library to make functional programming in C simple.
 Note that at this time only integers are supported. There is need for generic functions, though.
 So feel free to contribute.
 
-Building/Installing from Source
--------------------------------
-`make` to build. `make install` to install library and header files to your system. `make test` to run tests and examples.
+Building and Installing
+-----------------------
+`$ make && make install`
 
-Installing on Mac OS X
-----------------------
-`brew install https://raw.github.com/leroux/homebrew/master/Library/Formula/libfc.rb`
+OS X Installation
+-----------------
+`$ brew install https://raw.github.com/leroux/homebrew/master/Library/Formula/libfc.rb`
 
 List Format
 -----------
