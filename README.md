@@ -10,11 +10,9 @@ Building and Installing
 
 OS X Installation
 -----------------
-`$ brew install https://raw.github.com/leroux/homebrew/master/Library/Formula/libfc.rb`
-
+`$ brew install https://raw.github.com/leroux/homebrew-formulae/master/libfc.rb`
 
 - - -
-
 
 List Format
 -----------
