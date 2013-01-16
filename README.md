@@ -12,10 +12,9 @@ OS X Installation
 -----------------
 `$ brew install https://raw.github.com/leroux/homebrew/master/Library/Formula/libfc.rb`
 
+
 - - -
 
-libfc API
-=========
 
 List Format
 -----------
