@@ -8,10 +8,6 @@ Building and Installing
 -----------------------
 `$ make && make install`
 
-OS X Installation
------------------
-`$ brew install https://raw.github.com/leroux/homebrew-formulae/master/libfc.rb`
-
 - - -
 
 List Format
